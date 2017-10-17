@@ -11,44 +11,16 @@
     <div class="app2">
       <div id="map" style="width: 200px; height: 150px"></div>
       <script type="text/javascript">
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", "http://www.xxxxxxxx.com/mobile/iphone/xml/postal.asp?postal=33173", false);
-        xmlhttp.send();
-        xmlDoc = xmlhttp.responseXML;
-        var myOptions = {
-          zoom: 10,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-        };
-        var map = new google.maps.Map(document.getElementById("map"), myOptions);
-        var lat = x[i].getElementsByTagName("latitude")[0].childNodes[0].nodeValue;
-        var long = x[i].getElementsByTagName("longitude")[0].childNodes[0].nodeValue;
-        var pos = new google.maps.LatLng(lat, long);
-        var infowindow = new google.maps.InfoWindow({
-          map: map,
-          position: pos,
-          content: "Postcode 33173(Lat:" + lat + ", Long:" + long + ")"
-        });
-        map.setCenter(pos);
+
       </script>
       <script>
-        document.write("<table border='1'>");
-        document.write("<tr><td>Postcode</td><td>latitude</td><td>longitude</td></tr>");
-        var x = xmlDoc.getElementsByTagName("position");
-        for (i = 0; i < x.length; i++) {
-          document.write("<tr><td>33173</td><td>");
-          document.write(x[i].getElementsByTagName("latitude")[0].childNodes[0].nodeValue);
-          document.write("</td><td>");
-          document.write(x[i].getElementsByTagName("longitude")[0].childNodes[0].nodeValue);
-          document.write("</td></tr>");
-        }
-        document.write("</table>");
-
+      
 function CheckConnection2(){
-            var networkState = navigator.connection.type;
-            if(Connection.NONE==networkState)
-                alert("no connection");
-				else 
-					alert("connection established");
+   var networkState = navigator.connection.type;
+   if(Connection.NONE==networkState)
+       alert("no connection");
+	else 
+		alert("connection established");
 }
 
 
