@@ -36,7 +36,7 @@
 <icon src="img/icon.png" platform="android" density="mdpi" />
 <icon src="img/icon.png" platform="android" density="hdpi" />
 <icon src="img/icon.png" platform="android" density="xhdpi" />
-</widget>
+
 
 <manifest android:hardwareAccelerated="true" android:versionCode="1" android:versionName="1.0.0" android:windowSoftInputMode="adjustPan" package="dig.phonegap.loa_app" xmlns:android="http://schemas.android.com/apk/res/android">
   <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
@@ -88,3 +88,5 @@
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
 </platform>
+
+</widget>
